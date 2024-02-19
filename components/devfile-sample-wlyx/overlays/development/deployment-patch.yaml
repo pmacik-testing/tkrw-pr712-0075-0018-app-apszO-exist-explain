@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-wlyx
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0018-tenant/tkrw-pr712-0075-0018-app/devfile-sample-wlyx@sha256:0f71cf4a3daa3f06359f43358078177f0828951e5af522836b68735818c0026a
+        name: my-nodejs
+        resources: {}
+status: {}
